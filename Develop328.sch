@@ -4338,6 +4338,8 @@ chip</description>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4345,8 +4347,8 @@ chip</description>
 </plain>
 <instances>
 <instance part="MICROCONTROLLER" gate="A" x="66.04" y="48.26"/>
-<instance part="5V-DC-JACK" gate="G$1" x="99.06" y="93.98"/>
-<instance part="PWR-LED" gate="G$1" x="88.9" y="96.52" rot="R90"/>
+<instance part="5V-DC-JACK" gate="G$1" x="101.6" y="96.52"/>
+<instance part="PWR-LED" gate="G$1" x="73.66" y="91.44"/>
 <instance part="6PIN-PGMR" gate="G$1" x="91.44" y="-5.08"/>
 <instance part="PORTD-HDR" gate="G$1" x="119.38" y="60.96" rot="R180"/>
 <instance part="PORTB-HDR" gate="G$1" x="12.7" y="40.64"/>
@@ -4354,16 +4356,18 @@ chip</description>
 <instance part="GND_HDR" gate="G$1" x="10.16" y="71.12"/>
 <instance part="VCC-HDR" gate="G$1" x="10.16" y="83.82"/>
 <instance part="AREF-HDR" gate="G$1" x="10.16" y="60.96"/>
-<instance part="VCC_CAP" gate="G$1" x="63.5" y="93.98"/>
+<instance part="VCC_CAP" gate="G$1" x="55.88" y="88.9"/>
 <instance part="GND1" gate="1" x="40.64" y="27.94" rot="R270"/>
 <instance part="GND2" gate="1" x="43.18" y="22.86"/>
 <instance part="GND3" gate="1" x="101.6" y="0" rot="R180"/>
 <instance part="GND4" gate="1" x="25.4" y="76.2" rot="R180"/>
 <instance part="GND5" gate="1" x="25.4" y="68.58"/>
 <instance part="P+1" gate="VCC" x="22.86" y="86.36" rot="R270"/>
-<instance part="P+3" gate="VCC" x="93.98" y="86.36"/>
+<instance part="P+3" gate="VCC" x="48.26" y="99.06" rot="R90"/>
 <instance part="P+4" gate="VCC" x="101.6" y="-10.16" rot="R180"/>
 <instance part="P+2" gate="VCC" x="45.72" y="68.58"/>
+<instance part="GND6" gate="1" x="55.88" y="81.28"/>
+<instance part="GND7" gate="1" x="73.66" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -4605,6 +4609,16 @@ chip</description>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="48.26" y1="25.4" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="VCC_CAP" gate="G$1" pin="2"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="55.88" y1="83.82" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="PWR-LED" gate="G$1" pin="C"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="73.66" y1="86.36" x2="73.66" y2="83.82" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -4622,6 +4636,18 @@ chip</description>
 <wire x1="45.72" y1="66.04" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="MICROCONTROLLER" gate="A" pin="VCC"/>
 <wire x1="45.72" y1="63.5" x2="48.26" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+3" gate="VCC" pin="VCC"/>
+<wire x1="50.8" y1="99.06" x2="55.88" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="VCC_CAP" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="99.06" x2="55.88" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="99.06" x2="73.66" y2="99.06" width="0.1524" layer="91"/>
+<junction x="55.88" y="99.06"/>
+<pinref part="PWR-LED" gate="G$1" pin="A"/>
+<wire x1="73.66" y1="99.06" x2="73.66" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
+<junction x="73.66" y="99.06"/>
 </segment>
 </net>
 <net name="N$25" class="0">
