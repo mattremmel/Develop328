@@ -2015,11 +2015,17 @@ design rules under a new name.</description>
 <signal name="N$5">
 <contactref element="PORTB-HDR" pad="4"/>
 <contactref element="IC1" pad="18"/>
-<wire x1="0" y1="22.86" x2="25.4" y2="21.59" width="0" layer="19" extent="1-1"/>
+<contactref element="PG1" pad="5"/>
+<wire x1="19.05" y1="6.35" x2="25.4" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="0" y1="22.86" x2="19.05" y2="6.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="PORTB-HDR" pad="3"/>
 <contactref element="IC1" pad="19"/>
+<contactref element="PG1" pad="4"/>
+<contactref element="PG1" pad="3"/>
+<wire x1="21.59" y1="6.35" x2="25.4" y2="24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="3.81" x2="21.59" y2="6.35" width="0" layer="19" extent="1-1"/>
 <wire x1="0" y1="25.4" x2="25.4" y2="24.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
@@ -2037,26 +2043,10 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="23"/>
 <wire x1="43.18" y1="12.7" x2="25.4" y2="34.29" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$10">
-<contactref element="PORTC-HDR" pad="2"/>
-<contactref element="IC1" pad="24"/>
-<contactref element="PG1" pad="3"/>
-<wire x1="43.18" y1="15.24" x2="25.4" y2="36.83" width="0" layer="19" extent="1-1"/>
-<wire x1="21.59" y1="6.35" x2="43.18" y2="15.24" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$11">
-<contactref element="PORTC-HDR" pad="3"/>
-<contactref element="IC1" pad="25"/>
-<contactref element="PG1" pad="5"/>
-<wire x1="43.18" y1="17.78" x2="25.4" y2="39.37" width="0" layer="19" extent="1-1"/>
-<wire x1="19.05" y1="6.35" x2="43.18" y2="17.78" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$12">
 <contactref element="PORTC-HDR" pad="4"/>
 <contactref element="IC1" pad="26"/>
-<contactref element="PG1" pad="4"/>
 <wire x1="43.18" y1="20.32" x2="25.4" y2="41.91" width="0" layer="19" extent="1-1"/>
-<wire x1="21.59" y1="3.81" x2="43.18" y2="20.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="PORTC-HDR" pad="5"/>
@@ -2150,6 +2140,16 @@ design rules under a new name.</description>
 <contactref element="PWR-LED" pad="K"/>
 <contactref element="R1" pad="2"/>
 <wire x1="21.59" y1="57.15" x2="22.86" y2="60.96" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$28">
+<contactref element="PORTC-HDR" pad="3"/>
+<contactref element="IC1" pad="25"/>
+<wire x1="43.18" y1="17.78" x2="25.4" y2="39.37" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$29">
+<contactref element="PORTC-HDR" pad="2"/>
+<contactref element="IC1" pad="24"/>
+<wire x1="43.18" y1="15.24" x2="25.4" y2="36.83" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
