@@ -178,6 +178,8 @@
 <text x="22.86" y="63.5" size="1.016" layer="25">LED1</text>
 <text x="27.94" y="52.07" size="1.27" layer="25">5V DC</text>
 <text x="12.7" y="1.27" size="1.016" layer="25" rot="R90">6 PIN PGMR</text>
+<text x="0" y="60.96" size="2.1844" layer="25">Develop 328</text>
+<text x="0" y="58.42" size="1.27" layer="25">Rev 1.0</text>
 </plain>
 <libraries>
 <library name="Atmel_By_element14_Batch_1-00">
