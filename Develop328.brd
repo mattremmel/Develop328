@@ -146,6 +146,38 @@
 <wire x1="42.85" y1="0" x2="42.85" y2="66.03" width="0" layer="20"/>
 <wire x1="42.85" y1="66.03" x2="0" y2="66.03" width="0" layer="20"/>
 <wire x1="0" y1="66.03" x2="0" y2="0" width="0" layer="20"/>
+<text x="6.35" y="46.355" size="1.016" layer="25">VCC</text>
+<text x="6.35" y="43.815" size="1.016" layer="25">AVCC</text>
+<text x="6.35" y="40.005" size="1.016" layer="25">GND</text>
+<text x="6.35" y="37.465" size="1.016" layer="25">GND</text>
+<text x="6.35" y="33.655" size="1.016" layer="25">AREF</text>
+<text x="6.35" y="29.845" size="1.016" layer="25">PB0</text>
+<text x="6.35" y="27.305" size="1.016" layer="25">PB1</text>
+<text x="6.35" y="24.765" size="1.016" layer="25">PB2</text>
+<text x="6.35" y="22.225" size="1.016" layer="25">PB3</text>
+<text x="6.35" y="19.685" size="1.016" layer="25">PB4</text>
+<text x="6.35" y="17.145" size="1.016" layer="25">PB5</text>
+<text x="6.35" y="14.605" size="1.016" layer="25">PB6</text>
+<text x="6.35" y="12.065" size="1.016" layer="25">PB7</text>
+<text x="34.29" y="48.895" size="1.016" layer="25">PD0</text>
+<text x="34.29" y="46.355" size="1.016" layer="25">PD1</text>
+<text x="34.29" y="43.815" size="1.016" layer="25">PD2</text>
+<text x="34.29" y="41.275" size="1.016" layer="25">PD3</text>
+<text x="34.29" y="38.735" size="1.016" layer="25">PD4</text>
+<text x="34.29" y="36.195" size="1.016" layer="25">PD5</text>
+<text x="34.29" y="33.655" size="1.016" layer="25">PD6</text>
+<text x="34.29" y="31.115" size="1.016" layer="25">PD7</text>
+<text x="34.29" y="27.305" size="1.016" layer="25">PC0</text>
+<text x="34.29" y="24.765" size="1.016" layer="25">PC1</text>
+<text x="34.29" y="22.225" size="1.016" layer="25">PC2</text>
+<text x="34.29" y="19.685" size="1.016" layer="25">PC3</text>
+<text x="34.29" y="17.145" size="1.016" layer="25">PC4</text>
+<text x="34.29" y="14.605" size="1.016" layer="25">PC5</text>
+<text x="34.29" y="12.065" size="1.016" layer="25">PC6</text>
+<text x="12.065" y="26.035" size="1.016" layer="25">C1</text>
+<text x="22.86" y="57.15" size="1.016" layer="25">LED1</text>
+<text x="27.94" y="52.07" size="1.27" layer="25">5V DC</text>
+<text x="12.7" y="2.54" size="1.016" layer="25" rot="R90">6 PIN PGMR</text>
 </plain>
 <libraries>
 <library name="Atmel_By_element14_Batch_1-00">
@@ -1721,7 +1753,8 @@ type 0204, grid 5 mm</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.3048" drill="0.508">
+<clearance class="0" value="0.254"/>
 </class>
 </classes>
 <designrules name="default">
@@ -1904,180 +1937,196 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="MICROCONTROLLER" library="Atmel_By_element14_Batch_1-00" package="DIP254P762X457-28" value="ATMEGA328P-PU" x="25.4" y="13.97">
+<element name="IC1" library="Atmel_By_element14_Batch_1-00" package="DIP254P762X457-28" value="ATMEGA328P-PU" x="25.4" y="13.97" smashed="yes">
 <attribute name="OC_NEWARK" value="15R0268" x="25.4" y="13.97" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER" value="Atmel" x="25.4" y="13.97" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1715487" x="25.4" y="13.97" size="1.778" layer="27" display="off"/>
 <attribute name="PACKAGE" value="PDIP-28" x="25.4" y="13.97" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="ATMEGA328P-PU" x="25.4" y="13.97" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="19.8374" y="48.7934" size="2.0828" layer="25" ratio="10" rot="SR0"/>
 </element>
-<element name="5V-DC-JACK" library="adafruit" package="PJ-102A" value="" x="35.56" y="64.77"/>
-<element name="PWR-LED" library="adafruit" package="LED3MM" value="" x="24.13" y="60.96" rot="R180"/>
-<element name="6PIN-PGMR" library="SparkFun-Connectors" package="2X3-SHROUDED" value="" x="21.59" y="5.08" rot="R270">
+<element name="5V-DC-JACK" library="adafruit" package="PJ-102A" value="" x="35.56" y="64.77" smashed="yes"/>
+<element name="PWR-LED" library="adafruit" package="LED3MM" value="" x="24.13" y="60.96" smashed="yes" rot="R180">
+<attribute name="VALUE" x="22.225" y="62.611" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="PG1" library="SparkFun-Connectors" package="2X3-SHROUDED" value="" x="21.59" y="5.08" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="CONN-10681" x="21.59" y="5.08" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="29.464" y="8.001" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="PORTD-HDR" library="SparkFun-Connectors" package="1X08_ROUND" value="" x="39.37" y="49.53" rot="R270">
+<element name="PORTD-HDR" library="SparkFun-Connectors" package="1X08_ROUND" value="" x="39.37" y="49.53" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="CONN-08437" x="39.37" y="49.53" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="36.195" y="50.8" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="PORTB-HDR" library="SparkFun-Connectors" package="1X08_ROUND" value="" x="3.81" y="30.48" rot="R270">
+<element name="PORTB-HDR" library="SparkFun-Connectors" package="1X08_ROUND" value="" x="3.81" y="30.48" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="CONN-08437" x="3.81" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="0.635" y="31.75" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="PORTC-HDR" library="SparkFun-Connectors" package="1X07" value="" x="39.37" y="12.7" rot="R90"/>
-<element name="GND_HDR" library="SparkFun-Connectors" package="1X02" value="" x="3.81" y="40.64" rot="R270"/>
-<element name="VCC-HDR" library="SparkFun-Connectors" package="1X02" value="" x="3.81" y="44.45" rot="R90"/>
-<element name="AREF-HDR" library="SparkFun-Connectors" package="1X01" value="" x="3.81" y="34.29"/>
-<element name="VCC_CAP" library="SparkFun-Capacitors" package="CAP-PTH-SMALL-KIT" value="0.1uF" x="11.43" y="30.48" rot="R270">
-<attribute name="PROD_ID" value="CAP-08370" x="11.43" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="PORTC-HDR" library="SparkFun-Connectors" package="1X07" value="" x="39.37" y="12.7" smashed="yes" rot="R90">
+<attribute name="VALUE" x="42.545" y="11.43" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R1" library="resistor" package="0204/5" value="200" x="16.51" y="60.96"/>
+<element name="GND_HDR" library="SparkFun-Connectors" package="1X02" value="" x="3.81" y="40.64" smashed="yes" rot="R270">
+<attribute name="VALUE" x="0.635" y="41.91" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="VCC-HDR" library="SparkFun-Connectors" package="1X02" value="" x="3.81" y="44.45" smashed="yes" rot="R90">
+<attribute name="VALUE" x="6.985" y="43.18" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="AREF-HDR" library="SparkFun-Connectors" package="1X01" value="" x="3.81" y="34.29" smashed="yes">
+<attribute name="VALUE" x="2.54" y="31.115" size="1.27" layer="27"/>
+</element>
+<element name="C1" library="SparkFun-Capacitors" package="CAP-PTH-SMALL-KIT" value="0.1uF" x="12.7" y="30.48" smashed="yes" rot="R270">
+<attribute name="PROD_ID" value="CAP-08370" x="12.7" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="R1" library="resistor" package="0204/5" value="200" x="16.51" y="60.96" smashed="yes">
+<attribute name="NAME" x="15.7734" y="62.1284" size="0.9906" layer="25" ratio="10"/>
+</element>
 </elements>
 <signals>
 <signal name="VCC">
-<contactref element="MICROCONTROLLER" pad="7"/>
-<contactref element="6PIN-PGMR" pad="6"/>
+<contactref element="IC1" pad="7"/>
+<contactref element="PG1" pad="6"/>
 <contactref element="VCC-HDR" pad="2"/>
 <contactref element="5V-DC-JACK" pad="TIP"/>
-<contactref element="VCC_CAP" pad="1"/>
+<contactref element="C1" pad="1"/>
 <wire x1="17.78" y1="31.75" x2="35.66" y2="55.48" width="0" layer="19" extent="1-1"/>
-<wire x1="11.43" y1="31.877" x2="17.78" y2="31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="46.99" x2="11.43" y2="31.877" width="0" layer="19" extent="1-1"/>
+<wire x1="12.7" y1="31.877" x2="17.78" y2="31.75" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="46.99" x2="12.7" y2="31.877" width="0" layer="19" extent="1-1"/>
 <wire x1="19.05" y1="3.81" x2="17.78" y2="31.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="PORTB-HDR" pad="8"/>
-<contactref element="MICROCONTROLLER" pad="14"/>
+<contactref element="IC1" pad="14"/>
 <wire x1="3.81" y1="12.7" x2="17.78" y2="13.97" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="PORTB-HDR" pad="7"/>
-<contactref element="MICROCONTROLLER" pad="15"/>
+<contactref element="IC1" pad="15"/>
 <wire x1="3.81" y1="15.24" x2="25.4" y2="13.97" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="PORTB-HDR" pad="6"/>
-<contactref element="MICROCONTROLLER" pad="16"/>
+<contactref element="IC1" pad="16"/>
 <wire x1="3.81" y1="17.78" x2="25.4" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="PORTB-HDR" pad="5"/>
-<contactref element="MICROCONTROLLER" pad="17"/>
+<contactref element="IC1" pad="17"/>
 <wire x1="3.81" y1="20.32" x2="25.4" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="PORTB-HDR" pad="4"/>
-<contactref element="MICROCONTROLLER" pad="18"/>
+<contactref element="IC1" pad="18"/>
 <wire x1="3.81" y1="22.86" x2="25.4" y2="21.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="PORTB-HDR" pad="3"/>
-<contactref element="MICROCONTROLLER" pad="19"/>
+<contactref element="IC1" pad="19"/>
 <wire x1="3.81" y1="25.4" x2="25.4" y2="24.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="PORTB-HDR" pad="2"/>
-<contactref element="MICROCONTROLLER" pad="9"/>
+<contactref element="IC1" pad="9"/>
 <wire x1="3.81" y1="27.94" x2="17.78" y2="26.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
 <contactref element="PORTB-HDR" pad="1"/>
-<contactref element="MICROCONTROLLER" pad="10"/>
+<contactref element="IC1" pad="10"/>
 <wire x1="3.81" y1="30.48" x2="17.78" y2="24.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="PORTC-HDR" pad="1"/>
-<contactref element="MICROCONTROLLER" pad="23"/>
+<contactref element="IC1" pad="23"/>
 <wire x1="39.37" y1="12.7" x2="25.4" y2="34.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
 <contactref element="PORTC-HDR" pad="2"/>
-<contactref element="MICROCONTROLLER" pad="24"/>
-<contactref element="6PIN-PGMR" pad="3"/>
+<contactref element="IC1" pad="24"/>
+<contactref element="PG1" pad="3"/>
 <wire x1="39.37" y1="15.24" x2="25.4" y2="36.83" width="0" layer="19" extent="1-1"/>
 <wire x1="21.59" y1="6.35" x2="39.37" y2="15.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="PORTC-HDR" pad="3"/>
-<contactref element="MICROCONTROLLER" pad="25"/>
-<contactref element="6PIN-PGMR" pad="5"/>
+<contactref element="IC1" pad="25"/>
+<contactref element="PG1" pad="5"/>
 <wire x1="39.37" y1="17.78" x2="25.4" y2="39.37" width="0" layer="19" extent="1-1"/>
 <wire x1="19.05" y1="6.35" x2="39.37" y2="17.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
 <contactref element="PORTC-HDR" pad="4"/>
-<contactref element="MICROCONTROLLER" pad="26"/>
-<contactref element="6PIN-PGMR" pad="4"/>
+<contactref element="IC1" pad="26"/>
+<contactref element="PG1" pad="4"/>
 <wire x1="39.37" y1="20.32" x2="25.4" y2="41.91" width="0" layer="19" extent="1-1"/>
 <wire x1="21.59" y1="3.81" x2="39.37" y2="20.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="PORTC-HDR" pad="5"/>
-<contactref element="MICROCONTROLLER" pad="27"/>
+<contactref element="IC1" pad="27"/>
 <wire x1="39.37" y1="22.86" x2="25.4" y2="44.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$14">
 <contactref element="PORTC-HDR" pad="6"/>
-<contactref element="MICROCONTROLLER" pad="28"/>
+<contactref element="IC1" pad="28"/>
 <wire x1="39.37" y1="25.4" x2="25.4" y2="46.99" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
 <contactref element="PORTC-HDR" pad="7"/>
-<contactref element="MICROCONTROLLER" pad="1"/>
-<contactref element="6PIN-PGMR" pad="1"/>
+<contactref element="IC1" pad="1"/>
+<contactref element="PG1" pad="1"/>
 <wire x1="24.13" y1="6.35" x2="39.37" y2="27.94" width="0" layer="19" extent="1-1"/>
 <wire x1="17.78" y1="46.99" x2="39.37" y2="27.94" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$16">
 <contactref element="PORTD-HDR" pad="1"/>
-<contactref element="MICROCONTROLLER" pad="2"/>
+<contactref element="IC1" pad="2"/>
 <wire x1="17.78" y1="44.45" x2="39.37" y2="49.53" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 <contactref element="PORTD-HDR" pad="2"/>
-<contactref element="MICROCONTROLLER" pad="3"/>
+<contactref element="IC1" pad="3"/>
 <wire x1="17.78" y1="41.91" x2="39.37" y2="46.99" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$18">
 <contactref element="PORTD-HDR" pad="3"/>
-<contactref element="MICROCONTROLLER" pad="4"/>
+<contactref element="IC1" pad="4"/>
 <wire x1="17.78" y1="39.37" x2="39.37" y2="44.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$19">
 <contactref element="PORTD-HDR" pad="4"/>
-<contactref element="MICROCONTROLLER" pad="5"/>
+<contactref element="IC1" pad="5"/>
 <wire x1="17.78" y1="36.83" x2="39.37" y2="41.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$20">
 <contactref element="PORTD-HDR" pad="5"/>
-<contactref element="MICROCONTROLLER" pad="6"/>
+<contactref element="IC1" pad="6"/>
 <wire x1="17.78" y1="34.29" x2="39.37" y2="39.37" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$21">
 <contactref element="PORTD-HDR" pad="6"/>
-<contactref element="MICROCONTROLLER" pad="11"/>
+<contactref element="IC1" pad="11"/>
 <wire x1="17.78" y1="21.59" x2="39.37" y2="36.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$22">
 <contactref element="PORTD-HDR" pad="7"/>
-<contactref element="MICROCONTROLLER" pad="12"/>
+<contactref element="IC1" pad="12"/>
 <wire x1="17.78" y1="19.05" x2="39.37" y2="34.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$23">
 <contactref element="PORTD-HDR" pad="8"/>
-<contactref element="MICROCONTROLLER" pad="13"/>
+<contactref element="IC1" pad="13"/>
 <wire x1="17.78" y1="16.51" x2="39.37" y2="31.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$24">
 <contactref element="AREF-HDR" pad="1"/>
-<contactref element="MICROCONTROLLER" pad="21"/>
+<contactref element="IC1" pad="21"/>
 <wire x1="3.81" y1="34.29" x2="25.4" y2="29.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
-<contactref element="6PIN-PGMR" pad="2"/>
+<contactref element="PG1" pad="2"/>
 <contactref element="GND_HDR" pad="2"/>
 <contactref element="GND_HDR" pad="1"/>
-<contactref element="MICROCONTROLLER" pad="8"/>
-<contactref element="MICROCONTROLLER" pad="22"/>
-<contactref element="VCC_CAP" pad="2"/>
+<contactref element="IC1" pad="8"/>
+<contactref element="IC1" pad="22"/>
+<contactref element="C1" pad="2"/>
 <contactref element="5V-DC-JACK" pad="RING_SW"/>
 <contactref element="R1" pad="1"/>
 <polygon width="0.4064" layer="16">
@@ -2089,7 +2138,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$25">
 <contactref element="VCC-HDR" pad="1"/>
-<contactref element="MICROCONTROLLER" pad="20"/>
+<contactref element="IC1" pad="20"/>
 <wire x1="3.81" y1="44.45" x2="25.4" y2="26.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$26">
