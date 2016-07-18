@@ -151,14 +151,14 @@
 <text x="2.54" y="40.005" size="1.016" layer="25">GND</text>
 <text x="2.54" y="37.465" size="1.016" layer="25">GND</text>
 <text x="2.54" y="33.655" size="1.016" layer="25">AREF</text>
-<text x="2.54" y="29.845" size="1.016" layer="25">PB0 (CLKO)</text>
-<text x="2.54" y="27.305" size="1.016" layer="25">PB1 (OC1A)</text>
-<text x="2.54" y="24.765" size="1.016" layer="25">PB2 (SS / OC1B)</text>
-<text x="2.54" y="22.225" size="1.016" layer="25">PB3 (MOSI / OC2A)</text>
-<text x="2.54" y="19.685" size="1.016" layer="25">PB4 (MISO)</text>
-<text x="2.54" y="17.145" size="1.016" layer="25">PB5 (SCK)</text>
-<text x="2.54" y="14.605" size="1.016" layer="25">PB6 (XTAL1)</text>
-<text x="2.54" y="12.065" size="1.016" layer="25">PB7 (XTAL2)</text>
+<text x="2.54" y="12.065" size="1.016" layer="25">PB0 (CLKO)</text>
+<text x="2.54" y="14.605" size="1.016" layer="25">PB1 (OC1A)</text>
+<text x="2.54" y="17.145" size="1.016" layer="25">PB2 (SS / OC1B)</text>
+<text x="2.54" y="19.685" size="1.016" layer="25">PB3 (MOSI / OC2A)</text>
+<text x="2.54" y="22.225" size="1.016" layer="25">PB4 (MISO)</text>
+<text x="2.54" y="24.765" size="1.016" layer="25">PB5 (SCK)</text>
+<text x="2.54" y="27.305" size="1.016" layer="25">PB6 (XTAL1)</text>
+<text x="2.54" y="29.845" size="1.016" layer="25">PB7 (XTAL2)</text>
 <text x="40.64" y="48.895" size="1.016" layer="25" align="bottom-right">(RXD) PD0</text>
 <text x="40.64" y="46.355" size="1.016" layer="25" align="bottom-right">(TXD) PD1</text>
 <text x="40.64" y="43.815" size="1.016" layer="25" align="bottom-right">(INT0) PD2</text>
@@ -167,13 +167,13 @@
 <text x="40.64" y="36.195" size="1.016" layer="25" align="bottom-right">(OC0B / T1) PD5</text>
 <text x="40.64" y="33.655" size="1.016" layer="25" align="bottom-right">(OC0A / AIN0) PD6</text>
 <text x="40.64" y="31.115" size="1.016" layer="25" align="bottom-right">(AIN1) PD7</text>
-<text x="40.64" y="27.305" size="1.016" layer="25" align="bottom-right">(ADC0) PC0</text>
-<text x="40.64" y="24.765" size="1.016" layer="25" align="bottom-right">(ADC1) PC1</text>
-<text x="40.64" y="22.225" size="1.016" layer="25" align="bottom-right">(ADC2) PC2</text>
+<text x="40.64" y="27.305" size="1.016" layer="25" align="bottom-right">(RESET) PC6</text>
+<text x="40.64" y="24.765" size="1.016" layer="25" align="bottom-right">(ADC5 / SCL) PC5</text>
+<text x="40.64" y="22.225" size="1.016" layer="25" align="bottom-right">(ADC4 / SDA) PC4</text>
 <text x="40.64" y="19.685" size="1.016" layer="25" align="bottom-right">(ADC3) PC3</text>
-<text x="40.64" y="17.145" size="1.016" layer="25" align="bottom-right">(ADC4 / SDA) PC4</text>
-<text x="40.64" y="14.605" size="1.016" layer="25" align="bottom-right">(ADC5 / SCL) PC5</text>
-<text x="40.64" y="12.065" size="1.016" layer="25" align="bottom-right">(RESET) PC6</text>
+<text x="40.64" y="17.145" size="1.016" layer="25" align="bottom-right">(ADC2) PC2</text>
+<text x="40.64" y="14.605" size="1.016" layer="25" align="bottom-right">(ADC1) PC1</text>
+<text x="40.64" y="12.065" size="1.016" layer="25" align="bottom-right">(ADC0) PC0</text>
 <text x="13.335" y="33.655" size="1.016" layer="25">C1</text>
 <text x="22.86" y="63.5" size="1.016" layer="25">LED1</text>
 <text x="27.94" y="52.07" size="1.27" layer="25">5V DC</text>
