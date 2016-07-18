@@ -7771,7 +7771,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="resistor" deviceset="R-US_" device="0204/5" value="200ohm"/>
+<part name="R1" library="resistor" deviceset="R-US_" device="0204/5" value="200"/>
 </parts>
 <sheets>
 <sheet>
