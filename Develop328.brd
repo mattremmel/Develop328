@@ -576,23 +576,42 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="0402-CAP">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-chip</description>
-<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
-<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
-<wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.4064" layer="21"/>
-<smd name="1" x="-0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<smd name="2" x="0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<text x="-0.889" y="0.6985" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.0795" y="-1.143" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<package name="CAP-PTH-SMALL-KIT">
+<description>&lt;h3&gt;CAP-PTH-SMALL-KIT&lt;/h3&gt;
+Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.com/products/8375) or 22pF caps (http://www.sparkfun.com/products/8571).&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.</description>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.254" layer="21"/>
+<wire x1="-2.667" y1="1.27" x2="2.667" y2="1.27" width="0.254" layer="21"/>
+<wire x1="2.667" y1="1.27" x2="2.667" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="2.667" y1="-1.27" x2="-2.667" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="-2.667" y1="-1.27" x2="-2.667" y2="1.27" width="0.254" layer="21"/>
+<pad name="1" x="-1.397" y="0" drill="1.016" diameter="2.032" stop="no"/>
+<pad name="2" x="1.397" y="0" drill="1.016" diameter="2.032" stop="no"/>
+<polygon width="0.127" layer="30">
+<vertex x="-1.4021" y="-0.9475" curve="-90"/>
+<vertex x="-2.357" y="-0.0178" curve="-90.011749"/>
+<vertex x="-1.4046" y="0.9576" curve="-90"/>
+<vertex x="-0.4546" y="-0.0204" curve="-90.024193"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-1.4046" y="-0.4395" curve="-90.012891"/>
+<vertex x="-1.8491" y="-0.0153" curve="-90"/>
+<vertex x="-1.4046" y="0.452" curve="-90"/>
+<vertex x="-0.9627" y="-0.0051" curve="-90.012967"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="1.397" y="-0.9475" curve="-90"/>
+<vertex x="0.4421" y="-0.0178" curve="-90.011749"/>
+<vertex x="1.3945" y="0.9576" curve="-90"/>
+<vertex x="2.3445" y="-0.0204" curve="-90.024193"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="1.3945" y="-0.4395" curve="-90.012891"/>
+<vertex x="0.95" y="-0.0153" curve="-90"/>
+<vertex x="1.3945" y="0.452" curve="-90"/>
+<vertex x="1.8364" y="-0.0051" curve="-90.012967"/>
+</polygon>
 </package>
 </packages>
 </library>
@@ -1907,10 +1926,10 @@ design rules under a new name.</description>
 <element name="GND_HDR" library="SparkFun-Connectors" package="1X02" value="" x="11.43" y="62.23" rot="R270"/>
 <element name="VCC-HDR" library="SparkFun-Connectors" package="1X02" value="" x="11.43" y="66.04" rot="R90"/>
 <element name="AREF-HDR" library="SparkFun-Connectors" package="1X01" value="" x="11.43" y="53.34"/>
-<element name="VCC_CAP" library="SparkFun-Capacitors" package="0402-CAP" value="0.1uF" x="-34.29" y="-38.1">
-<attribute name="PROD_ID" value="CAP-12416" x="-34.29" y="-38.1" size="1.778" layer="27" display="off"/>
+<element name="VCC_CAP" library="SparkFun-Capacitors" package="CAP-PTH-SMALL-KIT" value="0.1uF" x="6.35" y="16.51">
+<attribute name="PROD_ID" value="CAP-08370" x="6.35" y="16.51" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R1" library="resistor" package="0204/5" value="200ohm" x="-31.75" y="-43.18"/>
+<element name="R1" library="resistor" package="0204/5" value="200ohm" x="19.05" y="7.62"/>
 </elements>
 <signals>
 <signal name="VCC">
@@ -1922,7 +1941,7 @@ design rules under a new name.</description>
 <wire x1="43.18" y1="50.8" x2="89" y2="69.45" width="0" layer="19" extent="1-1"/>
 <wire x1="11.43" y1="68.58" x2="43.18" y2="50.8" width="0" layer="19" extent="1-1"/>
 <wire x1="49.53" y1="11.43" x2="43.18" y2="50.8" width="0" layer="19" extent="1-1"/>
-<wire x1="-34.87" y1="-38.1" x2="49.53" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="4.953" y1="16.51" x2="49.53" y2="11.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="PORTB-HDR" pad="8"/>
@@ -2066,8 +2085,8 @@ design rules under a new name.</description>
 <wire x1="11.43" y1="59.69" x2="43.18" y2="48.26" width="0" layer="19" extent="1-1"/>
 <wire x1="11.43" y1="62.23" x2="11.43" y2="59.69" width="0" layer="19" extent="1-1"/>
 <wire x1="54.61" y1="11.43" x2="43.18" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-33.71" y1="-38.1" x2="54.61" y2="11.43" width="0" layer="19" extent="1-1"/>
-<wire x1="-34.29" y1="-43.18" x2="-33.71" y2="-38.1" width="0" layer="19" extent="1-1"/>
+<wire x1="7.747" y1="16.51" x2="54.61" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="16.51" y1="7.62" x2="7.747" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$25">
 <contactref element="VCC-HDR" pad="1"/>
@@ -2082,7 +2101,7 @@ design rules under a new name.</description>
 <signal name="N$27">
 <contactref element="PWR-LED" pad="K"/>
 <contactref element="R1" pad="2"/>
-<wire x1="-29.21" y1="-43.18" x2="78.74" y2="73.66" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="7.62" x2="78.74" y2="73.66" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
